@@ -621,10 +621,27 @@
   <div id="my-collapse" class="collapse">
     <p>
       Some example text some example text. 
-John Doe is an architect and engineer
+      John Doe is an architect and engineer
     </p>
   </div>
 
+  
+  <nav class="nav">
+    <li class="nav-item">
+      <a class="nav-link text-light bg-success active" href="#">Item 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Item 2</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Item 3</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Item 4</a>
+    </li>
+  </nav>
+
+  <br><hr><br>
   
 
 
@@ -651,7 +668,12 @@ John Doe is an architect and engineer
       
 
 
-
+<script>
+  $('#navId a').click(e => {
+    e.preventDefault();
+    $(this).tab('show');
+  });
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
